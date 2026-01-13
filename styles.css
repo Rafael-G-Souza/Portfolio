@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-left: 50px;
+}
+
+.secao{
+    padding: 100px 0;
+    padding-left: 50px;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    min-height: 85vh;
+}
+
+.principal h1{
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -4px;
+}
+
+.principal h1 span{
+    color: blue;
+}
+
+.principal p{
+    font-size: 24px;
+    margin-bottom: 40px;
+    max-width: 500px;
+    color: gray;
+}
+
+.botao-projetos{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #2359ee;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.titulo-secao{
+    font-size: 42px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.titulo-secao::after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background-color: #2359ee;
+}
+
+.grade-projetos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.img-projeto{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card-projeto{
+    background-color: #161616;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info-projeto{
+    padding: 20px;
+}
+
+.info-projeto h3{
+    margin-bottom: 10px;
+}
+
+.info-projeto p{
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.info-projeto{
+    color: #4d7cfe;
+    font-weight: 500;
+}
+
+.sobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.img-sobre{
+    height: 400px;
+    background-color: #161616;
+    border-radius: 10px;
+}
+
+.conteudo-sobre h2{
+    margin-bottom: 30px;
+
+}
+
+.conteudo-sobre p{
+    color: #bbb;
+    margin-bottom: 20px;
+
+}
+
+.habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tag-habilidades{
+    background-color: rgba(77, 124, 154, 0.2);
+    color: #4d7cfe;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.botoes-contato{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.botao-contato{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    min-width: 160px;
+    text-decoration: none;
+}
+
+.whatsapp{
+    background-color: #25D366;
+    color: white;
+}
+
+.email{
+    background-color: rgb(204, 31, 31);
+    color: white;
+}
+
+.linkedin{
+    background-color: #0077b5;
+    color: white;
+}
+
+.github{
+    background-color: #333;
+    color: white;   
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    color: gray;
+    font-size: 14px;
+}
+
+.efeito-cursor:hover{
+    transform:translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.cursor{
+    pointer-events: none;
+    position: fixed;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    background-color: rgba(77, 124, 254, 0.5);
+    z-index: 99;
+    transform: translate(-50%, -50%);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 20px;
+    }
+    .principal h1{
+        font-size: 50px;
+    }
+    ul{
+        gap: 20px;
+        justify-content: flex-start;
+    }
+    .secao{
+        padding: 60px 20px;
+    }
+    .sobre{
+        grid-template-columns: 1fr;
+    }
+    .img-sobre{
+        height: auto;
+    }
+}
