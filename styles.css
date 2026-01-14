@@ -66,6 +66,10 @@ ul{
     border-radius: 5px;
     text-decoration: none;
 }
+header a{
+    color: white;
+    text-decoration: none;
+}
 
 
 .titulo-secao{
@@ -252,3 +256,51 @@ img{
         height: auto;
     }
 }
+#canvas-particulas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background-color: black;
+}
+
+/* Container para centralizar o botão abaixo da grid */
+.container-ver-mais {
+    display: flex;
+    align-items: center;
+ /* Alinha ao centro horizontalmente */
+}
+
+/* Estilo do link (texto + seta) */
+.link-ver-mais {
+    text-decoration: none;
+    color: #bbb; /* Cinza claro inicial, igual aos seus parágrafos */
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Efeito Hover no texto */
+.link-ver-mais:hover {
+    color: #4d7cfe; /* Azul do seu tema (igual ao título dos cards) */
+}
+
+/* Estilo específico da seta para animação independente */
+.seta-animada {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Quando passar o mouse no link, a seta move para a direita */
+.link-ver-mais:hover .seta-animada {
+    transform: translateX(10px);
+}
+
+
+

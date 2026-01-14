@@ -9,9 +9,10 @@
 </head>
 
 <body>
+    <canvas id="canvas-particulas"></canvas>
     <header>
         <ul>
-            <li class="efeito-cursor"><a>Home</a></li>
+            <li class="efeito-cursor"><a href="index.html">Home</a></li>
             <li class="efeito-cursor"><a>Projetos</a></li>
             <li class="efeito-cursor"><a>Sobre</a></li>
             <li class="efeito-cursor"><a>Contato</a></li>
@@ -55,7 +56,9 @@
                     <a>Ver Projeto ➜</a>
                 </div>
             </div>
-
+            <div class="container-ver-mais">
+                <a href="https://github.com/Rafael-G-Souza?tab=repositories" target="_blank" class="link-ver-mais efeito-cursor"><span class="seta-animada">Ver mais projetos ➜</span></a>
+            </div>
         </div>
     </section>
     <section class="secao">
@@ -98,7 +101,8 @@
                 <span>WhatsApp</span>
             </a>
 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafaelsouzagoncalves2@gmail.com" target="_blank" class="botao-contato email efeito-cursor">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafaelsouzagoncalves2@gmail.com" target="_blank"
+                class="botao-contato email efeito-cursor">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
                     <path
@@ -108,7 +112,8 @@
                 </svg>
                 <span>E-mail</span>
             </a>
-            <a href="https://www.linkedin.com/in/rafael-gonçalves-de-souza-638a49396" class="botao-contato linkedin efeito-cursor">
+            <a href="https://www.linkedin.com/in/rafael-gonçalves-de-souza-638a49396"
+                class="botao-contato linkedin efeito-cursor">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-linkedin" viewBox="0 0 16 16">
                     <path
@@ -148,5 +153,6 @@
         cursor.style.display = 'block';
     });
 </script>
+<script src="img/particles.js"></script>
 
 </html>
