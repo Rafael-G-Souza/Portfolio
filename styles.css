@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    cursor: none;
 }
 
 html {
@@ -13,6 +12,7 @@ html {
 body{
     background-color: black;
     color: white;
+    cursor: none;
 }
 header{
     display: flex;
