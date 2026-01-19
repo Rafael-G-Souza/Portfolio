@@ -13,9 +13,9 @@
     <header>
         <ul>
             <li class="efeito-cursor"><a href="index.html">Home</a></li>
-            <li class="efeito-cursor"><a>Projetos</a></li>
-            <li class="efeito-cursor"><a>Sobre</a></li>
-            <li class="efeito-cursor"><a>Contato</a></li>
+            <li class="efeito-cursor"><a href="#projetos">Projetos</a></li>
+            <li class="efeito-cursor"><a href="#sobre">Sobre</a></li>
+            <li class="efeito-cursor"><a href="#contato">Contato</a></li>
         </ul>
     </header>
 
@@ -39,16 +39,16 @@
                 </div>
             </div>
             <div class="card-projeto efeito-cursor">
-                <img class="img-projeto" src="img/Captura de tela 2023-10-30 204137.png"
-                    alt="Captura de tela de um site de portfólio">
+                <img class="img-projeto" src="img/Captura de tela 2026-01-16 112005.png"
+                    alt="Captura de tela de um site de loja de jogos">
                 <div class="info-projeto">
-                    <h3>Projeto Trello</h3>
-                    <p>Clone do Trello desenvolvido com HTML e CSS</p>
-                    <a>Ver Projeto ➜</a>
+                    <h3>LH Games</h3>
+                    <p>Loja virtual de jogos desenvolvida com Angular</p>
+                    <a href="https://github.com/Rafael-G-Souza/LH-Games--angular-.git">Ver Projeto ➜</a>
                 </div>
             </div>
             <div class="card-projeto efeito-cursor">
-                <img class="img-projeto" src="img/Captura de tela 2025-10-20 155051.png"
+                <img class="img-projeto" src="img/Captura de Tela (7).png"
                     alt="Captura de tela de um site de portfólio">
                 <div class="info-projeto">
                     <h3>Projeto Trello 2</h3>
@@ -57,13 +57,13 @@
                 </div>
             </div>
             <div class="container-ver-mais">
-                <a href="https://github.com/Rafael-G-Souza?tab=repositories" target="_blank" class="link-ver-mais efeito-cursor"><span class="seta-animada">Ver mais projetos ➜</span></a>
+                <a href="projetos.html" target="_blank" class="link-ver-mais efeito-cursor"><span class="seta-animada">Ver mais projetos ➜</span></a>
             </div>
         </div>
     </section>
     <section class="secao">
         <h2 class="titulo-secao">Sobre Mim</h2>
-        <div class="sobre">
+        <div id="sobre" class="sobre">
             <img class="img-sobre" src="img/20231110_150237~2.jpg">
             <div class="conteudo-sobre">
                 <h2>Desenvolvedor com paixão por criar soluções digitais</h2>
@@ -91,7 +91,7 @@
     </section>
     <section class="secao">
         <h2 class="titulo-secao">Contato</h2>
-        <div class="botoes-contato">
+        <div id="contato" class="botoes-contato">
             <a href="https://wa.me/5561994406765" class="botao-contato whatsapp efeito-cursor">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -136,23 +136,13 @@
         <p>© 2026 Rafael Souza. Todos os direitos reservados.</p>
     </footer>
     <div class="cursor"></div>
+    <button id="botao-topo" class="botao-topo efeito-cursor">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+    </button>
 </body>
-<script>
-    const cursor = document.querySelector('.cursor');
-
-    document.addEventListener('mousemove', function (e) {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
-
-    document.addEventListener('mouseleave', function () {
-        cursor.style.display = 'none';
-    });
-
-    document.addEventListener('mouseenter', function () {
-        cursor.style.display = 'block';
-    });
-</script>
+<script src="script.js"></script>
 <script src="img/particles.js"></script>
 
 </html>
