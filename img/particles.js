@@ -27,7 +27,7 @@ class Particula {
             this.directionX = -this.directionX;
         }
         if (this.y > canvas.height || this.y < 0){
-            this.directionY = -this.diretionY;
+            this.directionY = -this.directionY;
         }
         this.x += this.directionX;
         this.y += this.directionY;

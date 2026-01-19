@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    cursor: none;
+    
 }
 
 html {
@@ -13,6 +13,7 @@ html {
 body{
     background-color: black;
     color: white;
+    cursor: none;
 }
 header{
     display: flex;
@@ -30,6 +31,10 @@ ul{
     display: flex;
     gap: 50px;
     list-style: none;
+}
+
+#projetos {
+    scroll-margin-top: 50px; 
 }
 
 .principal{
@@ -122,6 +127,11 @@ header a{
 .info-projeto{
     color: #4d7cfe;
     font-weight: 500;
+}
+
+.info-projeto a{
+    text-decoration: none;
+    color: #4d7cfe;
 }
 
 .sobre{
@@ -235,6 +245,41 @@ img{
     height: auto;
 }
 
+.botao-topo{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #2359ee;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor:pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 98;
+    transition:all 0.3 ease;
+    box-shadow: 0 4px 12px rgba(35, 89, 238, 0.4);
+}
+
+.botao-topo:hover{
+    background-color: #1a47d4;
+    box-shadow: 0 6px 16px rgba(35, 89, 238, 0.6);
+    transform: translateY(-5px);
+}
+
+.botao-topo.mostrar{
+    display: flex;
+}
+
+.botao-topo svg{
+    width: 20px;
+    height: 20px;
+}
+
 @media (max-width: 768px){
     header{
         padding: 20px;
@@ -256,6 +301,12 @@ img{
         height: auto;
     }
 }
+
+@media (max-width: 1100px){
+    .secao{
+        margin-right: 40px;
+    }
+}
 #canvas-particulas{
     position: fixed;
     top: 0;
@@ -267,17 +318,14 @@ img{
     background-color: black;
 }
 
-/* Container para centralizar o botão abaixo da grid */
 .container-ver-mais {
     display: flex;
     align-items: center;
- /* Alinha ao centro horizontalmente */
 }
 
-/* Estilo do link (texto + seta) */
 .link-ver-mais {
     text-decoration: none;
-    color: #bbb; /* Cinza claro inicial, igual aos seus parágrafos */
+    color: #bbb;
     font-size: 20px;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -286,18 +334,15 @@ img{
     align-items: center;
 }
 
-/* Efeito Hover no texto */
 .link-ver-mais:hover {
-    color: #4d7cfe; /* Azul do seu tema (igual ao título dos cards) */
+    color: #4d7cfe; 
 }
 
-/* Estilo específico da seta para animação independente */
 .seta-animada {
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
-/* Quando passar o mouse no link, a seta move para a direita */
 .link-ver-mais:hover .seta-animada {
     transform: translateX(10px);
 }
