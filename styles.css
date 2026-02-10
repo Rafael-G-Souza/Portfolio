@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,12 +9,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: black;
     color: white;
     cursor: none;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,46 +23,47 @@ header{
     margin-left: 50px;
 }
 
-.secao{
+.secao {
     padding: 100px 0;
     padding-left: 50px;
 }
-ul{
+
+ul {
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
 #projetos {
-    scroll-margin-top: 50px; 
+    scroll-margin-top: 50px;
 }
 
-.principal{
+.principal {
     display: flex;
     align-items: center;
     margin-left: 30px;
     min-height: 85vh;
 }
 
-.principal h1{
+.principal h1 {
     font-size: 80px;
     line-height: 1.1;
     margin-bottom: 20px;
     letter-spacing: -4px;
 }
 
-.principal h1 span{
+.principal h1 span {
     color: blue;
 }
 
-.principal p{
+.principal p {
     font-size: 24px;
     margin-bottom: 40px;
     max-width: 500px;
     color: gray;
 }
 
-.botao-projetos{
+.botao-projetos {
     display: inline-block;
     padding: 15px 30px;
     background-color: #2359ee;
@@ -70,19 +72,20 @@ ul{
     border-radius: 5px;
     text-decoration: none;
 }
-header a{
+
+header a {
     color: white;
     text-decoration: none;
 }
 
 
-.titulo-secao{
+.titulo-secao {
     font-size: 42px;
     margin-bottom: 60px;
     position: relative;
 }
 
-.titulo-secao::after{
+.titulo-secao::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -92,48 +95,49 @@ header a{
     background-color: #2359ee;
 }
 
-.grade-projetos{
+.grade-projetos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
-.img-projeto{
+
+.img-projeto {
     width: 100%;
     height: 200px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.card-projeto{
+.card-projeto {
     background-color: #161616;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.info-projeto{
+.info-projeto {
     padding: 20px;
 }
 
-.info-projeto h3{
+.info-projeto h3 {
     margin-bottom: 10px;
 }
 
-.info-projeto p{
+.info-projeto p {
     color: #bbb;
     margin-bottom: 15px;
 }
 
-.info-projeto{
+.info-projeto {
     color: #4d7cfe;
     font-weight: 500;
 }
 
-.info-projeto a{
+.info-projeto a {
     text-decoration: none;
     color: #4d7cfe;
 }
 
-.sobre{
+.sobre {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
@@ -141,30 +145,30 @@ header a{
     max-width: 1200px;
 }
 
-.img-sobre{
+.img-sobre {
     height: 400px;
     background-color: #161616;
     border-radius: 10px;
 }
 
-.conteudo-sobre h2{
+.conteudo-sobre h2 {
     margin-bottom: 30px;
 
 }
 
-.conteudo-sobre p{
+.conteudo-sobre p {
     color: #bbb;
     margin-bottom: 20px;
 
 }
 
-.habilidades{
+.habilidades {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.tag-habilidades{
+.tag-habilidades {
     background-color: rgba(77, 124, 154, 0.2);
     color: #4d7cfe;
     padding: 8px 15px;
@@ -174,7 +178,7 @@ header a{
     font-size: 14px;
 }
 
-.botoes-contato{
+.botoes-contato {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -184,7 +188,7 @@ header a{
     margin: 0 auto;
 }
 
-.botao-contato{
+.botao-contato {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -195,27 +199,27 @@ header a{
     text-decoration: none;
 }
 
-.whatsapp{
+.whatsapp {
     background-color: #25D366;
     color: white;
 }
 
-.email{
+.email {
     background-color: rgb(204, 31, 31);
     color: white;
 }
 
-.linkedin{
+.linkedin {
     background-color: #0077b5;
     color: white;
 }
 
-.github{
+.github {
     background-color: #333;
-    color: white;   
+    color: white;
 }
 
-footer{
+footer {
     text-align: center;
     padding: 20px;
     background-color: #121212;
@@ -223,28 +227,28 @@ footer{
     font-size: 14px;
 }
 
-.efeito-cursor:hover{
-    transform:translateY(-5px);
+.efeito-cursor:hover {
+    transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
 }
 
-.cursor{
+.cursor {
     pointer-events: none;
     position: fixed;
-    width:25px;
-    height:25px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: rgba(77, 124, 254, 0.5);
     z-index: 99;
     transform: translate(-50%, -50%);
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
-.botao-topo{
+.botao-topo {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -255,58 +259,64 @@ img{
     border-radius: 50%;
     color: white;
     font-size: 20px;
-    cursor:pointer;
+    cursor: pointer;
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 98;
-    transition:all 0.3 ease;
+    transition: all 0.3 ease;
     box-shadow: 0 4px 12px rgba(35, 89, 238, 0.4);
 }
 
-.botao-topo:hover{
+.botao-topo:hover {
     background-color: #1a47d4;
     box-shadow: 0 6px 16px rgba(35, 89, 238, 0.6);
     transform: translateY(-5px);
 }
 
-.botao-topo.mostrar{
+.botao-topo.mostrar {
     display: flex;
 }
 
-.botao-topo svg{
+.botao-topo svg {
     width: 20px;
     height: 20px;
 }
 
-@media (max-width: 768px){
-    header{
+@media (max-width: 768px) {
+    header {
         padding: 20px;
     }
-    .principal h1{
+
+    .principal h1 {
         font-size: 50px;
     }
-    ul{
+
+    ul {
         gap: 20px;
         justify-content: flex-start;
     }
-    .secao{
+
+    .secao {
         padding: 60px 20px;
     }
-    .sobre{
+
+    .sobre {
         grid-template-columns: 1fr;
     }
-    .img-sobre{
+
+    .img-sobre {
         height: auto;
     }
 }
 
-@media (max-width: 1100px){
-    .secao{
+@media (max-width: 1100px) {
+    .secao {
         margin-right: 40px;
     }
 }
-#canvas-particulas{
+
+#canvas-particulas {
     position: fixed;
     top: 0;
     left: 0;
@@ -334,7 +344,7 @@ img{
 }
 
 .link-ver-mais:hover {
-    color: #4d7cfe; 
+    color: #4d7cfe;
 }
 
 .seta-animada {
@@ -345,6 +355,3 @@ img{
 .link-ver-mais:hover .seta-animada {
     transform: translateX(10px);
 }
-
-
-
