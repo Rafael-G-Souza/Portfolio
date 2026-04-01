@@ -42,7 +42,7 @@ O projeto foi construído utilizando tecnologias web fundamentais, focando em pe
 
 | Desktop | Mobile |
 | :---: | :---: |
-| ![Desktop Preview](https://via.placeholder.com/600x400?text=Preview+Desktop) | ![Mobile Preview](https://via.placeholder.com/200x400?text=Preview+Mobile) |
+| ![Desktop Preview](img/Captura de tela 2026-04-01 132126.png) | ![Mobile Preview](https://via.placeholder.com/200x400?text=Preview+Mobile) |
 
 ---
 
