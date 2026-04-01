@@ -42,7 +42,7 @@ O projeto foi construído utilizando tecnologias web fundamentais, focando em pe
 
 | Desktop | Mobile |
 | :---: | :---: |
-| ![Desktop Preview](https://github.com/Rafael-G-Souza/Portfolio/blob/ef15a63bdd567b1f9312105dee68f6a9bffae87e/img/Captura%20de%20tela%202026-04-01%20132126.png) | ![Mobile Preview](https://github.com/Rafael-G-Souza/Portfolio/blob/976634b5936a1d32086f8e4d562bef030d35fb5f/img/Captura%20de%20tela%202026-04-01%20132154.png) |
+| ![Desktop Preview](https://github.com/Rafael-G-Souza/Portfolio/blob/ef15a63bdd567b1f9312105dee68f6a9bffae87e/img/Captura%20de%20tela%202026-04-01%20132126.png) | ![Mobile Preview](https://github.com/Rafael-G-Souza/Portfolio/blob/8b4eec78274e86171d6aae0704da585214b1fa14/img/Screenshot_20260401_133107_Chrome.jpg) |
 
 ---
 
